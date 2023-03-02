@@ -18,7 +18,8 @@ const signupStyles = StyleSheet.create({
   body: {
     width: '90%',
     alignSelf: 'center',
-    marginTop: 50,
+    marginTop: 30,
+    flex:1,
   },
   signinText: {
     fontSize: 72,
@@ -30,22 +31,13 @@ const signupStyles = StyleSheet.create({
   passwordContainer: {
     marginTop: 10,
   },
-  forgotEmail: {fontSize: 14, color: '#7F7A8C', marginTop: 15},
-  noAccountContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginTop: 10,
+  inputLabel:{
+    color:'#736E80',
+    fontSize:16,
+    fontWeight:'500'
   },
-  signUpContainer: {fontSize: 14, color: '#7F7A8C', marginRight: 5},
-  signUpText: {fontSize: 14, color: '#017AFF', marginRight: 5},
-  signinBtn: {
-    fontSize: 14,
-    backgroundColor: '#017AFF',
-    padding: 10,
-    borderRadius: 8,
-  },
-  signinBtnText: {fontSize: 14, color: 'white', marginRight: 5},
+ 
+
   policyTextHolder: {marginTop: 15, textAlign: 'justify'},
   policyText: {fontSize: 14, fontWeight: '400', color: '#7F7A8C'},
   policyLink: {
@@ -53,6 +45,45 @@ const signupStyles = StyleSheet.create({
     fontWeight: '400',
     color: '#017AFF',
     marginHorizontal: 5,
+  },
+
+  loginBtn: {
+    flexDirection: 'row',
+    width: '100%',
+    alignSelf: 'center',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop:20,
+    marginBottom:15
+  },
+  loginBtnHolder:{
+    flexDirection: 'row',
+    backgroundColor: '#017AFF',
+    justifyContent:'center',
+    padding: 10,
+    borderRadius: 10,
+    width:'48%',
+    alignItems:'center'
+  },
+  loginBtnText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '600',
+    marginRight:5
+
+  },
+  getHiBtn:{
+    backgroundColor: 'rgba(175, 171, 186, 0.4)',
+    padding: 10,
+    borderRadius: 10,
+    alignItems:'center',
+    width:'48%'
+  },
+  getHiBtnText: {
+    color: 'black',
+    fontSize: 16,
+    fontWeight: '600',
+   
   },
 });
 export default signupStyles;

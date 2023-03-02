@@ -9,61 +9,95 @@ const setupStyles = StyleSheet.create({
     alignItems: 'center',
     marginVertical: 20,
   },
-  close: {
-    backgroundColor: '#E6E4E9',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-  },
+  menu:{color:'black',fontSize:28, fontWeight:'900'},
+
   body: {
     width: '90%',
     alignSelf: 'center',
-    marginTop: 50,
+    marginTop: 20,
+    flex:1
   },
-  signinText: {
-    fontSize: 72,
-    color: 'black',
-    fontWeight: 'bold',
-    marginTop: 10,
-    marginBottom: 40,
+  title:{
+    fontSize:36,
+    color:'#000',
+    fontWeight:'600',
+    lineHeight:50.4
+  },
+  subTitle:{
+    fontSize:16,
+    fontWeight:'500',
+    lineHeight:19,
+    color:'#45424D',
+    marginTop:20,
+    width:'85%',
+    marginBottom:20
+  },
+  warn:{
+    flexDirection:'row',
+    alignItems:'center',
+    marginTop:20
+  },
+  warnText:{
+    fontSize:16,
+    color:'#017AFF',
+    marginLeft:10
+  },
+  sessionTitle:{
+    fontSize:20,
+    fontWeight:'500',
+    color:'#000',
+    marginTop:40,
+    marginBottom:20
+  },
+  label:{
+    color:'#736E80',
+    fontSize:16,
+    fontWeight:'500'
   },
   inputContainer: {
     marginTop: 20,
   },
-  dateContainer: {
-    marginTop: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+  footer:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    width:'90%',
+    alignSelf:'center',
+    marginTop:10,
+    alignItems:'center',
   },
-  genderContainer: {
-    marginTop: 20,
-    marginBottom: 20,
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    borderColor: '#9690A6',
-    borderWidth: 1,
-    borderRadius: 13,
-    paddingHorizontal: 10,
-    paddingVertical: 12,
-    justifyContent: 'space-between',
+  footerBtn:{
+    backgroundColor:'#017AFF',
+    flexDirection:'row',
+    padding:10,
+    alignItems:'center',
+    borderRadius:10
   },
-  genderText: {
-    color: '#9690A6',
-    fontSize:18
+  footerBtnBack:{
+    backgroundColor:'rgba(175, 171, 186, 0.4)',
+    flexDirection:'row',
+    padding:10,
+    alignItems:'center',
+    borderRadius:10,
+    marginRight:10
   },
-  genderSelected: {
-    color: '#017AFF',
-    fontSize:18
+  footerBtnText:{
+    color:'#fff',
+    fontSize:16,
+    fontWeight:'600',
+    marginRight:10
   },
-  done:{
-    backgroundColor:'#dedbe3',
-    paddingVertical:5,
-    paddingHorizontal:15,
-    borderRadius:5
+  bottomBar:{
+    width:80,
+    backgroundColor:'rgba(175, 171, 186, 0.3)',
+    height:6,
+    borderRadius:1,
+    marginLeft:10
   },
-  doneText:{
-    color:'black',
-    fontSize:14
-  }
+  pageCount:{
+    color:'#45424D',
+    fontSize:16,
+    fontWeight:'500'
+  },
+ 
 });
 export default setupStyles;

@@ -1,13 +1,16 @@
 import React from 'react';
-import {Pressable, ScrollView, TextInput, View, Text} from 'react-native';
-import Svg, {Path} from 'react-native-svg';
+import {Pressable, ScrollView, TextInput,SafeAreaView, View, Text} from 'react-native';
+import Svg, {Path, SvgXml} from 'react-native-svg';
 import InputText, {InputPassword} from '../../components/Input';
 import Logo from '../../components/Logo';
 import signupSuccessStyles from './signupSuccessStyle';
-
+import arrow_left from '../../images/arrow_left.svg';
 const SignupSuccess = ({navigation}) => {
   return (
-    <ScrollView>
+    <View style={{flex:1}}>
+    <SafeAreaView style={{flex:1}}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1}}>
+        
       <View style={signupSuccessStyles.nav}>
         {/* arrow left svg */}
         <Svg
@@ -56,26 +59,15 @@ const SignupSuccess = ({navigation}) => {
             Check your email
           </Text>
         </View>
-        <Text style={signupSuccessStyles.policyTextHolder}>
-          <Text style={signupSuccessStyles.policyText}>
-            By using Hi-Medic, you agree to the
-          </Text>
-          <Text style={signupSuccessStyles.policyLink}>
-            &nbsp;Terms of Use.&nbsp;
-          </Text>
-          <Text style={signupSuccessStyles.policyText}>
-            For more information about our privacy practices, see the Hi-Medic
-            Care
-          </Text>
-          <Text style={signupSuccessStyles.policyLink}>
-            &nbsp;Privacy Statement&nbsp;
-          </Text>
-          <Text style={signupSuccessStyles.policyText}>
-            We'll occasionally send you account-related emails.
-          </Text>
-        </Text>
+       
       </View>
-    </ScrollView>
+      <Pressable onPress={()=>navigation.navigate('home')} style={signupSuccessStyles.homeBtn}>
+        <SvgXml xml={arrow_left}/>
+        <Text style={signupSuccessStyles.homeBtnText}>Go home</Text>
+      </Pressable>
+      </ScrollView>
+      </SafeAreaView>
+    </View>
   );
 };
 

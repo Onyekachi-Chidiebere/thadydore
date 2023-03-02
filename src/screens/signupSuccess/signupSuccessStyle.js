@@ -19,20 +19,18 @@ const signupSuccessStyles = StyleSheet.create({
     width: '90%',
     alignSelf: 'center',
     marginTop: 50,
+    flex:1,
   },
   signinText: {
-    fontSize: 30,
-    textAlign: 'justify',
+    fontSize: 32,
+    textAlign: 'left',
     color: 'black',
-    fontWeight: 'bold',
-    marginTop: 10,
+    fontWeight: '700',
+    marginTop: 20,
     marginBottom: 40,
   },
 
   noAccountContainer: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
     marginTop: 10,
   },
   checkmailText: {
@@ -40,13 +38,25 @@ const signupSuccessStyles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
-  policyTextHolder: {marginTop: 15, textAlign: 'justify'},
-  policyText: {fontSize: 14, fontWeight: '400', color: '#7F7A8C'},
-  policyLink: {
-    fontSize: 14,
-    fontWeight: '400',
-    color: '#017AFF',
-    marginHorizontal: 5,
+  homeBtn:{
+    backgroundColor:'#017AFF',
+    width:'90%',
+    alignSelf:'center',
+    flexDirection:'row',
+    justifyContent:'center',
+    alignContent:'center',
+    padding:10,
+    borderRadius:10,
+    marginBottom:10,
+    alignItems:'center',
+   
   },
+  homeBtnText:{
+    color:'#fff',
+    fontSize:16,
+    fontWeight:'600',
+    marginLeft:10
+  }
+ 
 });
 export default signupSuccessStyles;

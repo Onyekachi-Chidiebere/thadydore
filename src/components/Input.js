@@ -9,13 +9,12 @@ const InputText = ({placeholder}) => {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'rgba(175, 171, 186, 0.3)',
         borderColor: '#9690A6',
-        borderWidth: 1,
         borderRadius: 13,
         paddingHorizontal: 10,
       }}>
-      <TextInput style={{flexGrow: 1}} placeholder={placeholder} />
+      <TextInput style={{flexGrow: 1, height:54}} placeholder={placeholder} />
       <Svg
         width="20"
         height="20"
@@ -40,13 +39,12 @@ export const InputPassword = ({placeholder}) => {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'rgba(175, 171, 186, 0.3)',
         borderColor: '#9690A6',
-        borderWidth: 1,
         borderRadius: 13,
         paddingHorizontal: 10,
       }}>
-      <TextInput style={{flexGrow: 1}} placeholder={placeholder} />
+      <TextInput style={{flexGrow: 1, height:54}} placeholder={placeholder} />
       <Svg
         width="24"
         height="24"

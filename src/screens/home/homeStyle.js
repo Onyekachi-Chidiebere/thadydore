@@ -7,23 +7,21 @@ const homeStyle = StyleSheet.create({
   },
   nav: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 10,
-    marginVertical: 30,
+    marginVertical: 10,
   },
-  menu: {
-    width: 8,
-    height: 8,
-    backgroundColor: 'black',
-    borderRadius: 10,
-    margin: 2,
+  title:{
+    color: 'black',
+    fontSize:105,
+    textAlign: 'center',
+    fontWeight:'600'
   },
   welcomeText: {
     textAlign: 'center',
-    fontSize: 48,
-    fontWeight: '600',
-    marginTop: 50,
+    fontSize: 32,
+    fontWeight: '500',
     color: 'black',
   },
   infoText: {
@@ -54,41 +52,56 @@ const homeStyle = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 0,
   },
-  searchText: {fontSize: 20, color: '#FFFFFF'},
-  searchIconHolder: {
-    backgroundColor: '#625f69',
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: 5,
-  },
-  buttonsHolder: {
-    top: 111,
-    width: '100%',
-    justifyContent: 'center',
-    zIndex: 3,
-  },
+  
+ 
   loginBtn: {
     flexDirection: 'row',
-    width: '60%',
+    width: '85%',
     alignSelf: 'center',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginTop:20,
+    marginBottom:15
+  },
+  loginBtnHolder:{
+    backgroundColor: '#017AFF',
+    padding: 10,
+    borderRadius: 10,
+    width:'48%',
+    alignItems:'center'
   },
   loginBtnText: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '600',
-    borderBottomColor: 'white',
-    borderBottomWidth: 1.5,
+
+  },
+  getHiBtn:{
+    backgroundColor: 'rgba(175, 171, 186, 0.4)',
+    padding: 10,
+    borderRadius: 10,
+    alignItems:'center',
+    width:'48%'
   },
   getHiBtnText: {
-    color: 'white',
-    fontSize: 18,
+    color: 'black',
+    fontSize: 16,
     fontWeight: '600',
-    backgroundColor: '#D81920',
-    padding: 10,
-    borderRadius: 5,
+   
   },
+  bottomText:{
+    color:'#7F7A8C',
+    width:'90%',
+    alignSelf:'center',
+    textAlign:'center',
+    fontSize:14,
+    fontWeight:'500',
+    lineHeight:22.4,
+    marginTop:10,
+  },
+  bottomTextLink:{
+    color:'#017AFF'
+  }
 });
 
 export default homeStyle;

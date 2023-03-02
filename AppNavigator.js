@@ -1,13 +1,16 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {LogBox} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { LogBox } from 'react-native';
 import Signin from './src/screens/signin/SignIn';
 import Home from './src/screens/home/HomeScreen';
 import Signup from './src/screens/signup/Signup';
 import SignupSuccess from './src/screens/signupSuccess/SignupSuccess';
 import Setup from './src/screens/setup/Setup';
 import SelectHcp from './src/screens/selectHcp/SelectHcp';
+import ResetPassword from './src/screens/resetPassword/ResetPassword';
+import ResetPasswordSuccess from './src/screens/resetPasswardSuccess/ResetPasswordSuccess';
+import WelcomePage from './src/screens/welcomePage/WelcomePage';
 //this is to disable deprication waring of react-native-gesture-handler
 LogBox.ignoreLogs([
   "[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
@@ -21,32 +24,47 @@ const AppNavigator = () => {
         <Stack.Screen
           name="home"
           component={Home}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="signin"
           component={Signin}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="reset-password"
+          component={ResetPassword}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="reset-password-success"
+          component={ResetPasswordSuccess}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="signup"
           component={Signup}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="signup-success"
           component={SignupSuccess}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="setup"
           component={Setup}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="welcome"
+          component={WelcomePage}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="select-hcp"
           component={SelectHcp}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
